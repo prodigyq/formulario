@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label>Nome:
+                <input type="text" name="nome" id="inome" minlength="7" maxlength="50" placeholder="Nome completo" required>
+            </label>
+        </p>
+        <p>
+            <label>Matrícula:
+                <input type="number" name="matricula" id="imatricula" minlength="12" maxlength="12" placeholder="202300000001" required>
+            </label>
+        </p>
+        <p>
+            <label>E-mail: 
+                <input type="email" name="email" id="iemail"  placeholder="exemplo@gmail.com">
+            </label>
+        </p>
+        <p>
+           <label>Data de nascimento: 
+                <input type="date" name="nascimento" id="inascimento" required>
+            </label>
+        </p>
+        <p>
+            <label><input type="radio" name="sexo"value="M">Masculino</label>
+            <label><input type="radio" name="sexo" value="F">Feminino</label>
+        </p>
+        <p>
+            <label><input type="submit" value="Enviar"></label>
+        </p>
+    </form>
+</body>
+</html>
