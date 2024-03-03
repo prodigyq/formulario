@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label>Nome:
+            <label>Nome: <br>
                 <input type="text" name="nome" id="inome" minlength="7" maxlength="50" placeholder="Nome completo" required>
             </label>
         </p>
         <p>
-            <label>Matrícula:
-                <input type="number" name="matricula" id="imatricula" minlength="12" maxlength="12" placeholder="202300000001" required>
+            <label>Matrícula: <br>
+                <input type="number" name="matricula" id="imatricula" minlength="12" maxlength="12" placeholder="202400000001" required>
             </label>
         </p>
         <p>
-            <label>E-mail: 
+            <label>E-mail: <br>
                 <input type="email" name="email" id="iemail"  placeholder="exemplo@gmail.com">
             </label>
         </p>
         <p>
-           <label>Data de nascimento: 
+           <label>Data de nascimento: <br>
                 <input type="date" name="nascimento" id="inascimento" required>
             </label>
         </p>
@@ -32,8 +34,12 @@
             <label><input type="radio" name="sexo" value="F">Feminino</label>
         </p>
         <p>
-            <label><input type="submit" value="Enviar"></label>
+            <label>Por que você é o melhor candidato? <br>
+                <input type="text" name="justificativa" id="ijustificativa" minlength="5" maxlength="50" placeholder="Justifcativa" required>
+            </label>
         </p>
+        <button type="submit">Enviar</button>
     </form>
+    </div>
 </body>
 </html>
