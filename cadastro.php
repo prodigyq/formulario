@@ -10,8 +10,9 @@ $data_atual = new DateTime();
 $diferença = $data_atual->diff($nascimento);
 $idade = $diferença->y;
 $sexo = $_POST['sexo'];
+$justificativa = $_POST['justificativa'];
 
-$sql = "INSERT INTO aluno (nome, matricula, email, sexo, idade) VALUES ('$nome', '$matricula', '$email', '$sexo', '$idade')";
+$sql = "INSERT INTO usuarios (nome, matricula, email, sexo, idade, justificativa) VALUES ('$nome', '$matricula', '$email', '$sexo', '$idade', '$justificativa')";
 
 $resultado = mysqli_query($con, $sql);
 
