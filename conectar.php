@@ -1,5 +1,5 @@
 <?php 
-
+//Criando variáveis para salvar as informações do banco de dados
 $hostname = "localhost";
 $bd = "cadastrar";
 $usuario = "root";
