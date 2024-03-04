@@ -11,17 +11,17 @@
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label>Nome: <br>
-                <input type="text" name="nome" id="inome" minlength="7" maxlength="50" placeholder="Nome completo" required>
+                <input type="text" name="nome" id="inome" minlength="7" maxlength="50" placeholder="Nome completo" size="32" required>
             </label>
         </p>
         <p>
             <label>Matrícula: <br>
-                <input type="number" name="matricula" id="imatricula" minlength="12" maxlength="12" placeholder="202400000001" required>
+                <input type="text" name="matricula" id="imatricula" minlength="12" maxlength="12" placeholder="202400000001" size="32" required>
             </label>
         </p>
         <p>
             <label>E-mail: <br>
-                <input type="email" name="email" id="iemail"  placeholder="exemplo@gmail.com">
+                <input type="email" name="email" id="iemail"  placeholder="exemplo@gmail.com" size="32">
             </label>
         </p>
         <p>
@@ -35,7 +35,7 @@
         </p>
         <p>
             <label>Por que você é o melhor candidato? <br>
-                <input type="text" name="justificativa" id="ijustificativa" minlength="5" maxlength="50" placeholder="Justifcativa" required>
+                <textarea style="resize: none" id="ijustificativa" name="justificativa" rows="4" cols="42" minlength="5" maxlength="50" placeholder="Justificativa"></textarea>
             </label>
         </p>
         <button type="submit">Enviar</button>
